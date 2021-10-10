@@ -6,59 +6,59 @@
 <?import javafx.scene.layout.AnchorPane?>
 <?import javafx.scene.text.Font?>
 
-<TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Results" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-         <children>
-            <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="942.0" text="The results show a number of daily calorie estimates that can be used as a guideline for how many calories&#10; to consume each day to maintain, lose, or gain weight at a chosen rate." />
-            <ListView layoutX="38.8" layoutY="62.8" prefHeight="288.0" prefWidth="544.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="50.0" />
-            <Label layoutX="52.0" layoutY="83.0" text="Maintain Weight: ">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="106.0" text="Calories/day" textFill="#0000008a">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="52.0" layoutY="143.0" text="Mild Weight Loss:">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Label>
-            <Label layoutX="52.0" layoutY="203.0" text="Weight Loss: ">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Label>
-            <Label layoutX="52.0" layoutY="265.0" text="Extreme Weight Loss:">
-               <font>
-                  <Font size="23.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="166.0" text="Calories/day" textFill="#0000008a">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="226.0" text="Calories/day" textFill="#0000008a">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label layoutX="298.0" layoutY="288.0" text="Calories/day" textFill="#0000008a">
-               <font>
-                  <Font size="15.0" />
-               </font>
-            </Label>
-            <Label id="nameLabel1" layoutX="325.0" layoutY="92.0" text="Label" />
-            <Label id="nameLabel2" layoutX="325.0" layoutY="152.0" text="Label" />
-            <Label id="nameLabel3" layoutX="325.0" layoutY="212.0" text="Label" />
-            <Label id="nameLabel4" layoutX="325.0" layoutY="274.0" text="Label" />
-         </children></AnchorPane>
-  </content>
-   <font>
-      <Font name="Arial Black" size="16.0" />
-   </font>
+<TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Results" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="OutputController">
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+            <children>
+                <Label layoutX="14.0" layoutY="14.0" prefHeight="35.0" prefWidth="942.0" text="The results show a number of daily calorie estimates that can be used as a guideline for how many calories&#10; to consume each day to maintain, lose, or gain weight at a chosen rate." />
+                <ListView layoutX="38.8" layoutY="62.8" prefHeight="288.0" prefWidth="544.0" AnchorPane.bottomAnchor="26.0" AnchorPane.leftAnchor="26.0" AnchorPane.rightAnchor="29.0" AnchorPane.topAnchor="50.0" />
+                <Label layoutX="52.0" layoutY="83.0" text="Maintain Weight: ">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="298.0" layoutY="106.0" text="Calories/day" textFill="#0000008a">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="143.0" text="Mild Weight Loss:">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="203.0" text="Weight Loss: ">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="52.0" layoutY="265.0" text="Extreme Weight Loss:">
+                    <font>
+                        <Font size="23.0" />
+                    </font>
+                </Label>
+                <Label layoutX="298.0" layoutY="166.0" text="Calories/day" textFill="#0000008a">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="298.0" layoutY="226.0" text="Calories/day" textFill="#0000008a">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label layoutX="298.0" layoutY="288.0" text="Calories/day" textFill="#0000008a">
+                    <font>
+                        <Font size="15.0" />
+                    </font>
+                </Label>
+                <Label fx:id="nameLabel1" layoutX="325.0" layoutY="92.0" text="Label" />
+                <Label fx:id="nameLabel2" layoutX="325.0" layoutY="152.0" text="Label" />
+                <Label fx:id="nameLabel3" layoutX="325.0" layoutY="212.0" text="Label" />
+                <Label fx:id="nameLabel4" layoutX="325.0" layoutY="274.0" text="Label" />
+            </children></AnchorPane>
+    </content>
+    <font>
+        <Font name="Arial Black" size="16.0" />
+    </font>
 </TitledPane>
