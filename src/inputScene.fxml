@@ -2,9 +2,9 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
 <?import javafx.scene.control.MenuItem?>
 <?import javafx.scene.control.RadioButton?>
-<?import javafx.scene.control.SplitMenuButton?>
 <?import javafx.scene.control.Tab?>
 <?import javafx.scene.control.TabPane?>
 <?import javafx.scene.control.TextField?>
@@ -15,128 +15,128 @@
 <?import javafx.scene.text.Font?>
 
 <TitledPane alignment="CENTER" animated="false" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" text="Calorie Calculator" xmlns="http://javafx.com/javafx/17" xmlns:fx="http://javafx.com/fxml/1" fx:controller="InputController">
-  <content>
-    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="648.0">
-         <children>
-            <TabPane layoutY="40.8" prefHeight="323.0" prefWidth="586.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="28.0">
-              <tabs>
-                <Tab text="US Units">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <Pane layoutX="53.0" layoutY="7.0" prefHeight="292.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                 <children>
-                                    <TextField fx:id="ageText1" layoutX="67.0" layoutY="15.0" prefHeight="24.0" prefWidth="71.0" promptText="15-80">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label layoutX="14.0" layoutY="18.0" text="Age" />
-                                    <Label layoutX="10.0" layoutY="49.0" text="Gender" />
-                                    <RadioButton fx:id="maleButton1" layoutX="67.0" layoutY="47.0" mnemonicParsing="false" text="Male">
-                                       <toggleGroup>
-                                          <ToggleGroup fx:id="genders" />
-                                       </toggleGroup></RadioButton>
-                                    <RadioButton fx:id="femaleButton1" layoutX="143.0" layoutY="47.0" mnemonicParsing="false" text="Female" toggleGroup="$genders" />
-                                    <Label layoutX="12.0" layoutY="84.0" text="Height" />
-                                    <TextField fx:id="feetText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="81.0" prefHeight="24.0" prefWidth="71.0" promptText="feet">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <TextField fx:id="inchText" alignment="CENTER_RIGHT" layoutX="141.0" layoutY="81.0" prefHeight="24.0" prefWidth="71.0" promptText="inches">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label layoutX="12.0" layoutY="121.0" text="Weight" />
-                                    <TextField fx:id="poundsText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="118.0" prefHeight="24.0" prefWidth="143.0" promptText="lbs">
-                                       <font>
-                                          <Font size="11.0" />
-                                       </font>
-                                    </TextField>
-                                    <Label layoutX="12.0" layoutY="155.0" text="Activity" />
-                                    <SplitMenuButton fx:id="activityLevel1" layoutX="67.0" layoutY="149.0" mnemonicParsing="false" text="Select Your Activity Level">
-                                      <items>
-                                        <MenuItem mnemonicParsing="false" text="Basal Metabolic Rate (BMR)" />
-                                        <MenuItem mnemonicParsing="false" text="Sedentary: Little to no exercise" />
-                                          <MenuItem mnemonicParsing="false" text="Light: Exercise 1-3 times/week" />
-                                          <MenuItem mnemonicParsing="false" text="Moderate: Exercise 4-5 times/week" />
-                                          <MenuItem mnemonicParsing="false" text="Active: Daily exercise or intense exercise 3-4 times/week" />
-                                          <MenuItem mnemonicParsing="false" text="Very Active: Intense exercise 6-7 times/week" />
-                                          <MenuItem mnemonicParsing="false" text="ABSOLUTE CHAD MODE: David Goggins type stuff" />
-                                      </items>
-                                    </SplitMenuButton>
-                                    <Button fx:id="USButton" layoutX="67.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitUS" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #a2ee00; -fx-border-color: #008bfd; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Calculate">
-                                       <font>
-                                          <Font size="21.0" />
-                                       </font>
-                                    </Button>
-                                 </children>
-                              </Pane>
-                           </children>
-                        </AnchorPane>
-                  </content>
-                </Tab>
-                <Tab text="Metric Units">
-                  <content>
-                    <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                           <children>
-                              <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
-                                 <children>
-                                    <Pane fx:id="activityLevel2" layoutX="53.0" layoutY="7.0" prefHeight="292.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
-                                       <children>
-                                          <TextField fx:id="ageText2" layoutX="67.0" layoutY="15.0" prefHeight="24.0" prefWidth="71.0" promptText="15-80">
-                                             <font>
-                                                <Font size="11.0" />
-                                             </font>
-                                          </TextField>
-                                          <Label layoutX="14.0" layoutY="18.0" text="Age" />
-                                          <Label layoutX="10.0" layoutY="49.0" text="Gender" />
-                                          <RadioButton fx:id="maleButton2" layoutX="67.0" layoutY="47.0" mnemonicParsing="false" text="Male" toggleGroup="$genders" />
-                                          <RadioButton fx:id="femaleButton2" layoutX="143.0" layoutY="47.0" mnemonicParsing="false" text="Female" toggleGroup="$genders" />
-                                          <Label layoutX="12.0" layoutY="84.0" text="Height" />
-                                          <TextField fx:id="centimeterText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="81.0" prefHeight="24.0" prefWidth="143.0" promptText="cm">
-                                             <font>
-                                                <Font size="11.0" />
-                                             </font>
-                                          </TextField>
-                                          <Label layoutX="12.0" layoutY="121.0" text="Weight" />
-                                          <TextField fx:id="kilogramText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="118.0" prefHeight="24.0" prefWidth="143.0" promptText="kg">
-                                             <font>
-                                                <Font size="11.0" />
-                                             </font>
-                                          </TextField>
-                                          <Label layoutX="12.0" layoutY="155.0" text="Activity" />
-                                          <SplitMenuButton layoutX="67.0" layoutY="149.0" mnemonicParsing="false" text="Select Your Activity Level">
-                                             <items>
-                                                <MenuItem mnemonicParsing="false" text="Basal Metabolic Rate (BMR)" />
-                                                <MenuItem mnemonicParsing="false" text="Sedentary: Little to no exercise" />
-                                                <MenuItem mnemonicParsing="false" text="Light: Exercise 1-3 times/week" />
-                                                <MenuItem mnemonicParsing="false" text="Moderate: Exercise 4-5 times/week" />
-                                                <MenuItem mnemonicParsing="false" text="Active: Daily exercise or intense exercise 3-4 times/week" />
-                                                <MenuItem mnemonicParsing="false" text="Very Active: Intense exercise 6-7 times/week" />
-                                                <MenuItem mnemonicParsing="false" text="ABSOLUTE CHAD MODE: David Goggins type stuff" />
-                                             </items>
-                                          </SplitMenuButton>
-                                          <Button fx:id="metricButton" layoutX="67.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitMetric" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #a2ee00; -fx-border-color: #008bfd; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Calculate">
-                                             <font>
-                                                <Font size="21.0" />
-                                             </font>
-                                          </Button>
-                                       </children>
-                                    </Pane>
-                                 </children>
-                              </AnchorPane>
-                           </children></AnchorPane>
-                  </content>
-                </Tab>
-              </tabs>
-            </TabPane>
-            <Label layoutX="14.0" layoutY="14.0" text=" The Calorie Calculator will calculate your maintenance and weight loss calories. Made by Alex Choi. " />
-         </children></AnchorPane>
-  </content>
-   <font>
-      <Font name="Arial Black" size="16.0" />
-   </font>
+    <content>
+        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="426.0" prefWidth="648.0">
+            <children>
+                <TabPane layoutY="40.8" prefHeight="323.0" prefWidth="586.0" tabClosingPolicy="UNAVAILABLE" AnchorPane.bottomAnchor="13.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="13.0" AnchorPane.topAnchor="28.0">
+                    <tabs>
+                        <Tab text="US Units">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <Pane layoutX="53.0" layoutY="7.0" prefHeight="292.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                            <children>
+                                                <TextField fx:id="ageText1" layoutX="67.0" layoutY="15.0" prefHeight="24.0" prefWidth="71.0" promptText="15-80">
+                                                    <font>
+                                                        <Font size="11.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="14.0" layoutY="18.0" text="Age" />
+                                                <Label layoutX="10.0" layoutY="49.0" text="Gender" />
+                                                <RadioButton fx:id="maleButton1" layoutX="67.0" layoutY="47.0" mnemonicParsing="false" text="Male">
+                                                    <toggleGroup>
+                                                        <ToggleGroup fx:id="genders" />
+                                                    </toggleGroup></RadioButton>
+                                                <RadioButton fx:id="femaleButton1" layoutX="143.0" layoutY="47.0" mnemonicParsing="false" text="Female" toggleGroup="$genders" />
+                                                <Label layoutX="12.0" layoutY="84.0" text="Height" />
+                                                <TextField fx:id="feetText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="81.0" prefHeight="24.0" prefWidth="71.0" promptText="feet">
+                                                    <font>
+                                                        <Font size="11.0" />
+                                                    </font>
+                                                </TextField>
+                                                <TextField fx:id="inchText" alignment="CENTER_RIGHT" layoutX="141.0" layoutY="81.0" prefHeight="24.0" prefWidth="71.0" promptText="inches">
+                                                    <font>
+                                                        <Font size="11.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="12.0" layoutY="121.0" text="Weight" />
+                                                <TextField fx:id="poundsText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="118.0" prefHeight="24.0" prefWidth="143.0" promptText="lbs">
+                                                    <font>
+                                                        <Font size="11.0" />
+                                                    </font>
+                                                </TextField>
+                                                <Label layoutX="12.0" layoutY="155.0" text="Activity" />
+                                                <Button fx:id="USButton" layoutX="67.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitUS" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #a2ee00; -fx-border-color: #008bfd; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Calculate">
+                                                    <font>
+                                                        <Font size="21.0" />
+                                                    </font>
+                                                </Button>
+                                    <MenuButton fx:id="USActivityMenu" layoutX="67.0" layoutY="150.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="358.0" text="Select Your Activity Level">
+                                       <items>
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity1" text="Basal Metabolic Rate (BMR)" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity2" text="Sedentary: Little to no exercise" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity3" text="Light: Exercise 1-3 times/week" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity4" text="Moderate: Exercise 4-5 times/week" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity5" text="Active: Daily exercise or intense exercise 3-4 times/week" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity6" text="Very Active: Intense exercise 6-7 times/week" />
+                                          <MenuItem mnemonicParsing="false" onAction="#USActivity7" text="ABSOLUTE CHAD MODE: David Goggins type stuff" />
+                                       </items>
+                                    </MenuButton>
+                                            </children>
+                                        </Pane>
+                                    </children>
+                                </AnchorPane>
+                            </content>
+                        </Tab>
+                        <Tab text="Metric Units">
+                            <content>
+                                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                    <children>
+                                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                                            <children>
+                                                <Pane layoutX="53.0" layoutY="7.0" prefHeight="292.0" prefWidth="600.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="0.0" AnchorPane.topAnchor="0.0">
+                                                    <children>
+                                                        <TextField fx:id="ageText2" layoutX="67.0" layoutY="15.0" prefHeight="24.0" prefWidth="71.0" promptText="15-80">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Label layoutX="14.0" layoutY="18.0" text="Age" />
+                                                        <Label layoutX="10.0" layoutY="49.0" text="Gender" />
+                                                        <RadioButton fx:id="maleButton2" layoutX="67.0" layoutY="47.0" mnemonicParsing="false" text="Male" toggleGroup="$genders" />
+                                                        <RadioButton fx:id="femaleButton2" layoutX="143.0" layoutY="47.0" mnemonicParsing="false" text="Female" toggleGroup="$genders" />
+                                                        <Label layoutX="12.0" layoutY="84.0" text="Height" />
+                                                        <TextField fx:id="centimeterText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="81.0" prefHeight="24.0" prefWidth="143.0" promptText="cm">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Label layoutX="12.0" layoutY="121.0" text="Weight" />
+                                                        <TextField fx:id="kilogramText" alignment="CENTER_RIGHT" layoutX="67.0" layoutY="118.0" prefHeight="24.0" prefWidth="143.0" promptText="kg">
+                                                            <font>
+                                                                <Font size="11.0" />
+                                                            </font>
+                                                        </TextField>
+                                                        <Label layoutX="12.0" layoutY="155.0" text="Activity" />
+                                          <MenuButton fx:id="metricActivityMenu" layoutX="67.0" layoutY="150.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="358.0" text="Activity Level">
+                                            <items>
+                                              <MenuItem mnemonicParsing="false" onAction="#MetricActivity1" text="Basal Metabolic Rate (BMR)" />
+                                              <MenuItem mnemonicParsing="false" onAction="#MetricActivity2" text="Sedentary: Little to no exercise" />
+                                                <MenuItem mnemonicParsing="false" onAction="#MetricActivity3" text="Light: Exercise 1-3 times/week" />
+                                                <MenuItem mnemonicParsing="false" onAction="#MetricActivity4" text="Moderate: Exercise 4-5 times/week" />
+                                                <MenuItem mnemonicParsing="false" onAction="#MetricActivity5" text="Active: Daily exercise or intense exercise 3-4 times/week" />
+                                                <MenuItem mnemonicParsing="false" onAction="#MetricActivity6" text="Very Active: Intense exercise 6-7 times/week" />
+                                                <MenuItem mnemonicParsing="false" onAction="#MetricActivity7" text="ABSOLUTE CHAD MODE: David Goggins type stuff" />
+                                            </items>
+                                          </MenuButton>
+                                                        <Button fx:id="metricButton" layoutX="67.0" layoutY="195.0" mnemonicParsing="false" onAction="#submitMetric" prefHeight="39.0" prefWidth="186.0" style="-fx-background-color: #a2ee00; -fx-border-color: #008bfd; -fx-background-radius: 5em; -fx-border-radius: 5em;" text="Calculate">
+                                                            <font>
+                                                                <Font size="21.0" />
+                                                            </font>
+                                                        </Button>
+                                                    </children>
+                                                </Pane>
+                                            </children>
+                                        </AnchorPane>
+                                    </children></AnchorPane>
+                            </content>
+                        </Tab>
+                    </tabs>
+                </TabPane>
+                <Label layoutX="14.0" layoutY="14.0" text=" The Calorie Calculator will calculate your maintenance and weight loss calories. Made by Alex Choi. " />
+            </children></AnchorPane>
+    </content>
+    <font>
+        <Font name="Arial Black" size="16.0" />
+    </font>
 </TitledPane>
